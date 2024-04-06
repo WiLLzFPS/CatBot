@@ -10,8 +10,6 @@ load_dotenv()
 
 cat_url = links.get_random_cat()
 
-print(f"{cat_url}")
-
 # grab data from dotenv and assign to variables
 slack_token = os.environ.get("SLACK_BOT_TOKEN")
 client = WebClient(token=slack_token)
